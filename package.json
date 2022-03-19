@@ -1,0 +1,28 @@
+{
+  "name": "ourapp",
+  "version": "1.0.1",
+  "description": "This project is based on an event and ticketing application star",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "keywords": [
+    "stars",
+    "events",
+    "tickets",
+    "store"
+  ],
+  "author": "Divelopers",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "https": "^1.0.0",
+    "mongoose": "^6.2.5",
+    "react": "^17.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
