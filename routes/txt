@@ -1,0 +1,11 @@
+{
+    "nombre_evento": "Future Nostalgia Tour 2022",
+    "fecha": "18 de Septiembre 2022",
+    "hora": "7:00 pm",
+    "lugar": "Parque Salitre Mágico",
+    "cantidad_ticket": 1,
+    "fecha_pedido": 21/03/2022,
+    "total": 790.000,
+    "estado_pago": "pagada",
+    
+}

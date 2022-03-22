@@ -13,7 +13,7 @@ app.use(express.json());
     res.send('Mi aplicación con Express')
 })*/
 app.use('/api/boletaGeneral', require('./routes/boletaGeneral'));
-
+app.use('/api/ticket',require('./routes/ticket'));
 
 app.listen(3000, () => {
     console.log('El servidor se esta ejecutando en el puerto 3000')
