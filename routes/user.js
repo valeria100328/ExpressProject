@@ -17,7 +17,7 @@ router.post('/', async(req, res) => {
         email:req.body.email,
         password: req.body.password
     })
-    //Creamos una constante asincrona para que nos guarde ese usuario en la base de datoss
+    //Creamos una constante asincrona para que nos guarde ese usuario en la base de datos
     const result = await user.save()
     //Esta en nuestro modelo user que nos va a generar el token para autenticar si ese es el usuario
     const jwtToken = user.generateJWT()
