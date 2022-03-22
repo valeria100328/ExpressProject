@@ -12,11 +12,14 @@ const conectar_DataBase = async() => {
             useNewUrlParser: true,
             useUnifiedTopology: true
         })
+        // eslint-disable-next-line no-console
         console.log('Base de datos conectada')
     } catch (error) {
+        // eslint-disable-next-line no-console
         console.log(error);
         process.exit(1);
     }
 }
+
 //Exportamos nuestro module
 module.exports =  conectar_DataBase

@@ -16,7 +16,5 @@ router.get('/', () => {
 })
 
 
-
-
 //Tema del router
 module.exports = router;
