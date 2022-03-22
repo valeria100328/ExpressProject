@@ -18,13 +18,8 @@ app.use('/api/autenticacion/', autenticacion)
 
 
 //app.use('/api/BoletaGeneral', require('./routes/BoletaGeneral'));
-app.use('/api', require('./routes/api'));
+app.use('/api', require('./routes/api'));;
 
-
-
-
-app.use('/api/boletaGeneral', require('./routes/boletaGeneral'));
-app.use('/api/ticket',require('./routes/ticket'));
 
 
 app.listen(3000, () => {

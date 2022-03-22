@@ -1,5 +1,3 @@
-const res = require('express/lib/response');
-const { request } = require('https');
 const Ticket = require('../models/Ticket');
 
 exports.crearTicket = async (req, res) => {
