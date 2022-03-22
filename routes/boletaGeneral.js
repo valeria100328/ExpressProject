@@ -1,19 +1,14 @@
 const express = require('express');
 //Integraremos todos los métodos http
 const router = express.Router();
+const boletaGeneralController = require('../controllers/BoletaGeneralController');
 
 
-router.post('/', () => {
-    console.log('Creando Boleta')
-})
-
-router.post('/:id', () => {
-    console.log('Actualizando la Boleta')
-})
-
-router.get('/', () => {
-    console.log('La boleta es tal')
-})
+router.post('/boletaGeneral', boletaGeneralController.createBoletaGeneral)
+router.get('/boletaGeneral', boletaGeneralController.consultBoletaGeneral);
+router.get('/boletaGeneral/:id', boletaGeneralController.consultsBoletaGeneral);
+router.put('/boletaGeneral/:id', boletaGeneralController.updateBoletaGeneral);
+router.delete('/boletaGeneral/:id', boletaGeneralController.deleteBoletaGeneral);
 
 
 
