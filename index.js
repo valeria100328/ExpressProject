@@ -21,7 +21,15 @@ app.use('/api/autenticacion/', autenticacion)
 app.use('/api', require('./routes/api'));
 
 
+<<<<<<< HEAD
 
+=======
+/*app.get('/',(req,res) => {
+    res.send('Mi aplicación con Express')
+})*/
+app.use('/api/boletaGeneral', require('./routes/boletaGeneral'));
+app.use('/api/ticket',require('./routes/ticket'));
+>>>>>>> 9415241596876502173bd72f6ecd38584e0fadc2
 
 app.listen(3000, () => {
     console.log('El servidor se esta ejecutando en el puerto 3000')
