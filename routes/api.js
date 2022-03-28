@@ -48,6 +48,4 @@ router.put('/ticket/:id', ticketController.actualizarTicket);
 router.delete ('/ticket/:id',ticketController.eliminarTicket);
 
 
-
-
 module.exports = router;

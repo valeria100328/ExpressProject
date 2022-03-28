@@ -15,7 +15,7 @@ exports.crearBoleta = async(req , res) => {
       res.status(500).send('Ups... Hay un error, comuniquese con soporte');
   }
 
-}
+} 
 
 //GET
 exports.consultarBoletas = async(req, res) => {
