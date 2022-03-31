@@ -27,11 +27,11 @@ router.put('/cliente/:id', ClienteController.updateClient)
 router.delete('/cliente/:id', ClienteController.deleteClient);
 
 //BOLETA VIP
-router.post('/boletaVIP', boletaVipController.crearBoleta)
-router.get('/boletaVIP', boletaVipController.consultarBoletas);
-router.get('/boletaVIP/:id', boletaVipController.consultarBoleta);
-router.put('/boletaVIP/:id', boletaVipController.actualizarBoleta);
-router.delete('/boletaVIP/:id', boletaVipController.eliminarBoleta);
+router.post('/boletavip', boletaVipController.crearBoletaVip)
+router.get('/boletavip', boletaVipController.consultarBoletas);
+router.get('/boletavip/:id', boletaVipController.consultarBoleta);
+router.put('/boletavip/:id', boletaVipController.actualizarBoleta);
+router.delete('/boletavip/:id', boletaVipController.eliminarBoleta);
 
 //EVENTO RATA BLANCA
 router.post('/eventoRB', eventoRataBlancaController.crearEventoRB)

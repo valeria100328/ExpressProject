@@ -1,7 +1,7 @@
 const BoletaVIP = require('../models/BoletaVIP');
 
 //Post
-exports.crearBoleta = async(req , res) => {
+exports.crearBoletaVip = async(req , res) => {
   // console.log('creando la boletaVIP desde el controlador...');
   // console.log(req.body)
     try {
@@ -15,7 +15,7 @@ exports.crearBoleta = async(req , res) => {
       res.status(500).send('Ups... Hay un error, comuniquese con soporte');
   }
 
-} 
+}
 
 //GET
 exports.consultarBoletas = async(req, res) => {
@@ -53,7 +53,6 @@ exports.actualizarBoleta = async(req, res) => {
       if (!data_boletaVip) {
           res.status(404).json({ mensaje: 'No se encontraron coincidencias para la actualización de datos' })
       }
-
       data_boletaVip.precio = precio;
       data_boletaVip.servicio = servicio;
       data_boletaVip.seccion = seccion;

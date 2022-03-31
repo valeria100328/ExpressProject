@@ -3,11 +3,11 @@ const router = express.Router();
 const boletaVipController = require('../controllers/boletaVipController')
 
 
-router.post('/', boletaVipController.crearBoleta)
-router.get('/', boletaVipController.consultarBoletas);
-router.get('/:id', boletaVipController.consultarBoleta);
-router.put('/:id', boletaVipController.actualizarBoleta);
-router.delete('/:id', boletaVipController.eliminarBoleta);
+router.post('/boletavip', boletaVipController.crearBoleta)
+router.get('/boletavip', boletaVipController.consultarBoletas);
+router.get('/boletavip/:id', boletaVipController.consultarBoleta);
+router.put('/boletavip/id', boletaVipController.actualizarBoleta);
+router.delete('/boletavip/:id', boletaVipController.eliminarBoleta);
 
 
 //Tema del router

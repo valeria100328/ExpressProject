@@ -1,13 +1,14 @@
 const mongoose = require('mongoose')
 
 const boletaVIPSchema = mongoose.Schema({
+
   precio: {
       type: Number,
-      default: 300000
+      require: true
   },
   servicio: {
       type: Number,
-      default: 5500
+      require: true
   },
   seccion: {
       type: String,
